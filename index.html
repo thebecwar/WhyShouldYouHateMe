@@ -22,12 +22,28 @@ body {
 h1 {
 	color: #fff7d3;
 }
+button {
+	background: #003a29;
+	border: none;
+	color: #fff7d3;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5 5 5 5;
+	font-size: 16px;
+	border-radius: 12px;
+}
+button:hover {
+	background: #fff7d3;
+	color: #003a29;
+}
 </style>
 </head>
-<body onload="pickReason()">
-
-<br/><br/><br/><br/><br/>
-<center><h1>You're <span id="hate"></span>.</h1></center>
-
-</body>
+  <body onload="pickReason()">
+    <br/><br/><br/><br/><br/>
+    <center>
+      <h1>You're <span id="hate"></span>.</h1>
+      <button onclick="pickReason()">Spin the wheel again.</button>
+    </center>
+  </body>
 </html>
