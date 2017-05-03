@@ -3,7 +3,29 @@
 <title>Why Should Someone Hate Me?</title>
 <script>
 
-var choices = ['cisnormative', 'a big fat meanie head', 'culturally appropriating me', 'transphobic', 'insufficiently angry'];
+var choices = [
+	'You\'re cisnormative.', 
+	'You\'re a big fat meanie head.', 
+	'You\'re culturally appropriating me.', 
+	'You\'re transphobic.', 
+	'You\'re insufficiently angry.',
+	'My pastor told me you\'re evil.',
+	'Your heteronormative microaggressions.',
+	'You\'re heterophobic.',
+	'You\'re a liberal.',
+	'You\'re a conservative.',
+	'You told me I was wrong.',
+	'You hurted my feelz.',
+	'You\'re culturally insensitive.',
+	'You triggered me.',
+	'You\'re a cuck.',
+	'You support the ACLU.',
+	'You don\'t support the ACLU.',
+	'You said nice things about _____.',
+	'You aren\'t sufficiently woke.',
+	'You think _____ should be allowed to speak.',
+	'You think _____ should\'nt be allowed to speak.',
+];
 
 function pickReason() {
 
@@ -42,7 +64,7 @@ button:hover {
   <body onload="pickReason()">
     <br/><br/><br/><br/><br/>
     <center>
-      <h1>You're <span id="hate"></span>.</h1>
+      <h1><span id="hate"></span></h1>
       <button onclick="pickReason()">Spin the wheel again.</button>
     </center>
   </body>
