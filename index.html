@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Why Should Someone Hate Me?</title>
+<script>
+
+var choices = ['cisnormative', 'a big fat meanie head', 'culturally appropriating me', 'transphobic', 'insufficiently angry'];
+
+function pickReason() {
+
+  document.getElementById('hate').innerText = choices[Math.floor(Math.random() * choices.length)];
+}
+
+</script>
+
+</head>
+<body onload="pickReason()">
+
+<center><h1>You're <span id="hate"></span>.</h1></center>
+
+</body>
+</html>
