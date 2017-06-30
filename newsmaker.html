@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Make the news!</title>
+<script src="newsdata.js"></script>
+<script src="newsgenerator.js"></script>
+<script src="newsmaker.js"></script>
+<style>
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+div.inputArea {
+    width: 50%;
+    align: float;
+    padding: 5px 5px 50px 5px;
+}
+p.heading {
+    font: bold italic 24pt Times;
+}
+p.note {
+    font: italic 12pt Times;
+}
+td {
+    font: bold italic 12pt Times;
+}
+</style>
+</head>
+<body>
+    <center>
+        <div class='inputArea'>
+            <p class='heading'>Make Your Own News!</p>
+            <table>
+                <tr>
+                    <td>First Headline Line:</td>
+                    <td><input type='text' id='headline1' size='30' /></td>
+                </tr>
+                <tr>
+                    <td>Second Headline Line:</td>
+                    <td><input type='text' id='headline2'size='30' /></td>
+                </tr>
+                <tr>
+                    <td>First Sub-headline Line:</td>
+                    <td><input type='text' id='sub1' size='30' /></td>
+                </tr>
+                <tr>
+                    <td>Second Sub-headline Line:</td>
+                    <td><input type='text' id='sub2' size='30' /></td>
+                </tr>
+            </table>
+            <p class='note'>Only the first line of text is strictly necessary.</p>
+            <p class='note'>Note: The image is entirely constructed in your browser, and will not be saved anywhere. That's an image down there, so you can save and share it.</p>
+            <button onclick='processInput()'>Make It!</button>
+        </div>
+        <canvas id='scratchCanvas' width='1528px' height='446px'></canvas>
+        <img id='placeholder' src='' />
+        <br />
+        <a id='permalink'></a><a href="newsmaker.html">Make Your Own News</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="news.html">Random</a>
+    </center>
+</body>
+</html>
