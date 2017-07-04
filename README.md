@@ -11,7 +11,7 @@ Made for @popehat. Generates a random newspaper headline from a set of options. 
 
 # CBS This Morning, Featuring that guy from the internet
 
-Want Ken to be interviewed and look dismissively about your subject? This is the thing for you.
+Want Ken to be interviewed and look dismissively about your subject? This is the thing for you. At: [hateme.co/hesnotkarl](http://hateme.co/hesnotkarl)
 
 # License (For everything):
 
