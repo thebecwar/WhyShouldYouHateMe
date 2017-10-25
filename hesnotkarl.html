@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>He's not Karl Rove</title>
+<script src="namelist.js"></script>
 <script src="notKarl.js"></script>
 <style>
 body {
@@ -44,6 +45,7 @@ td {
 </style>
 </head>
 <body>
+<input type='hidden' id='seekritName' value=''/>
     <center>
         <div class='inputArea'>
             <p class='heading'></p>
@@ -53,6 +55,9 @@ td {
                 </tr>
                 <tr>
                     <td><input type='text' id='caption' size='30' placeholder="Caption" /></td>
+                </tr>
+                <tr>
+                    <td><input type='checkbox' id='hiding' onclick='hidingToggled();'>Ken's in hiding</input>
                 </tr>
             </table>
             <p class='note'>Note: The image is entirely constructed in your browser, and will not be saved anywhere.<br /> That's an image down there, so you can save and share it.</p>
