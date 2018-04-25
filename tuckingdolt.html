@@ -1,6 +1,8 @@
 <html>
 <head>
 <title>Is Tuck an idiot, or just a puppy caught in a person's body?</title>
+<script src='cropper.js'></script>
+<link rel='stylesheet' href='cropper.css' />
 <script src="tuckingdolt.js"></script>
 <style>
 body {
@@ -27,6 +29,11 @@ img {
     max-width: 100%;
     max-height: auto;
 }
+img.picker {
+    max-width: 100%;
+    //max-height: 100%;
+    //object-fit: contain;
+}
 div.inputArea {
     width: 50%;
     align: float;
@@ -41,10 +48,30 @@ p.note {
 td {
     font: bold italic 12pt Times;
 }
+
+.imagepick {
+    height: 50%;
+    width: 50%;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    z-index: 2;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
 </style>
 </head>
 <body>
     <center>
+        <div class='imagepick' id='imagepicker'>
+            <div height='80%' width='80%'>
+                <img id='interviewee' class='picker' src='' />
+            </div>
+            <div height='10%' width='80%'>
+                <button onclick='crop()'>Crop It!</button>
+            </div>
+        </div>
         <div class='inputArea'>
             <p class='heading'></p>
             <table>
@@ -53,6 +80,15 @@ td {
                 </tr>
 				<tr>
                     <td><input type='text' id='caption2' size='30' placeholder="Caption Line 2 (Optional)" /></td>
+                </tr>
+                <tr>
+                    <td><input type='text' id='name' size='30' placeholder="Name" /></td>
+                </tr>
+                <tr>
+                    <td><input type='text' id='occupation' size='30' placeholder="Occupation" /></td>
+                </tr>
+                <tr>
+                    <td><input type='file' id='imgfile' onchange='onFileSelected(event)'/></td>
                 </tr>
             </table>
             <p class='note'>Note: The image is entirely constructed in your browser, and will not be saved anywhere.<br /> That's an image down there, so you can save and share it.</p>
