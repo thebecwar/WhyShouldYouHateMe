@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Tuck's Thoughts</title>
+<script src="tuckthoughts.js"></script>
+<style>
+body {
+  background: #01122d; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #01122d , #1a6cef); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #01122d, #1a6cef); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #01122d, #1a6cef); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #01122d , #1a6cef); /* Standard syntax */
+}
+button {
+    border-radius: 3px;
+    border: none;
+    padding: 10px 10px;
+    background-color: #686868;
+    color: #b9d1f7;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: #f2f1b0;
+    color: #01122d;
+}
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+div.inputArea {
+    width: 50%;
+    align: float;
+    padding: 5px 5px 50px 5px;
+}
+p.heading {
+    font: bold italic 24pt Times;
+}
+p.note {
+    font: italic 12pt Times;
+}
+td {
+    font: bold italic 12pt Times;
+}
+</style>
+</head>
+<body>
+    <center>
+        <div class='inputArea'>
+            <p class='heading'></p>
+            <table>
+				<!--
+                <tr>
+                    <td><input type='text' id='name' size='30' placeholder='Name' /></td>
+                </tr>
+				-->
+				<tr>
+                    <td><input type='text' id='thought1' size='30' placeholder="First Thought" /></td>
+                </tr>
+				<tr>
+                    <td><input type='text' id='thought2' size='30' placeholder="Second Thought" /></td>
+                </tr>
+				<tr>
+                    <td><input type='text' id='thought3' size='30' placeholder="Third Thought" /></td>
+                </tr>
+				<tr>
+                    <td><input type='text' id='thought4' size='30' placeholder="Fourth Thought" /></td>
+                </tr>
+            </table>
+            <p class='note'>Note: The image is entirely constructed in your browser, and will not be saved anywhere.<br /> That's an image down there, so you can save and share it.</p>
+            <button onclick='processInput()'>Make It!</button>
+        </div>
+        <canvas id='scratchCanvas' width='1440px' height='808px'></canvas>
+        <img id='placeholder' src='' height='90%' />
+        <br />
+        <a href="newsmaker.html">Make Your Own News</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="news.html">Random NYT</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/thebecwar/WhyShouldYouHateMe">WTF is this?</a>
+    </center>
+</body>
+</html>
